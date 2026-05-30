@@ -68,11 +68,13 @@ export default function TaskList({ activeBrand, date, tasks, onUpdate }: TaskLis
 
   useEffect(() => {
     if (showRecurModal) loadDailyTemplates();
-  }, [showRecurModal, activeBrand]);
+    else setDailyTemplates([]);
+  }, [showRecurModal, activeBrand.id]);
 
   useEffect(() => {
     if (showWeeklyModal) loadWeeklyTemplates();
-  }, [showWeeklyModal, activeBrand]);
+    else setWeeklyTemplates([]);
+  }, [showWeeklyModal, activeBrand.id]);
 
   // ── ADD TEMPLATES ──
   const handleAddDailyTemplate = async (e: React.FormEvent) => {
@@ -111,11 +113,12 @@ export default function TaskList({ activeBrand, date, tasks, onUpdate }: TaskLis
     if (confirm("Delete this recurring task template? Existing tasks for today won't be deleted.")) {
       try {
         await deleteRecurringTemplate(tempId);
-        if (recurType === "daily") loadDailyTemplates();
-        else loadWeeklyTemplates();
+        if (recurType === "daily") await loadDailyTemplates();
+        else await loadWeeklyTemplates();
         onUpdate();
       } catch (err) {
         console.error(err);
+        alert("Failed to delete template: " + err);
       }
     }
   };

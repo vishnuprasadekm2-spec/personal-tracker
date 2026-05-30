@@ -73,6 +73,8 @@ export default function TaskItem({
         onUpdate();
       } catch (err) {
         console.error(err);
+        alert("Failed to delete task: " + err);
+        onUpdate(); // refresh to recover from stale state
       }
     }
   };

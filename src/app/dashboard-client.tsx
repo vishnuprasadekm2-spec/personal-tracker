@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useTransition } from "react";
+import React, { useState, useTransition, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Brand, Task, DailyFocus } from "@/types";
 import Topbar from "@/components/topbar";
@@ -42,6 +42,16 @@ export default function DashboardClient({
   const [taskType, setTaskType] = useState<"one" | "rec">("one");
   const [taskDate, setTaskDate] = useState(initialDate);
 
+  // Sync local state when server props change (after router.refresh)
+  useEffect(() => {
+    setActiveBrand(initialActiveBrand);
+  }, [initialActiveBrand]);
+
+  useEffect(() => {
+    setCurrentDate(initialDate);
+    setTaskDate(initialDate);
+  }, [initialDate]);
+
   const handleUpdate = () => {
     startTransition(() => {
       router.refresh();
@@ -51,27 +61,34 @@ export default function DashboardClient({
   const handleSwitchBrand = (brandId: string) => {
     const nextBrand = initialBrands.find((b) => b.id === brandId) || initialBrands[0];
     setActiveBrand(nextBrand);
-    router.push(`/?brandId=${brandId}&date=${currentDate}`);
-    handleUpdate();
+    startTransition(() => {
+      router.push(`/?brandId=${brandId}&date=${currentDate}`);
+    });
   };
 
   const handleSwitchDate = (dateStr: string) => {
     setCurrentDate(dateStr);
-    router.push(`/?brandId=${activeBrand.id}&date=${dateStr}`);
-    handleUpdate();
+    setTaskDate(dateStr);
+    startTransition(() => {
+      router.push(`/?brandId=${activeBrand.id}&date=${dateStr}`);
+    });
   };
 
   const handleAddTask = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!taskText.trim()) return;
 
+    // For one-off tasks, use the user-picked taskDate; for recurring (which is
+    // always created as a daily template here), seed for the currently viewed date.
+    const targetDate = taskType === "one" ? taskDate : currentDate;
+
     try {
       await createTask(
         activeBrand.id,
         taskText.trim(),
-        taskDate,
+        targetDate,
         taskType,
-        "daily" // Standard daily template if recurring
+        taskType === "rec" ? "daily" : undefined
       );
       setTaskText("");
       handleUpdate();
