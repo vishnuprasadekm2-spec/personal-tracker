@@ -1,0 +1,142 @@
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ── USER MODEL ─────────────────────────────────────────────────────────────
+model User {
+  id           String    @id @default(uuid())
+  email        String    @unique
+  passwordHash String?
+  name         String?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  brands       Brand[]
+  uiStates     UIState[]
+
+  @@map("users")
+}
+
+// ── BRAND MODEL ─────────────────────────────────────────────────────────────
+model Brand {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name      String
+  emoji     String   @default("🏠")
+  color     String   @default("#6366f1")
+  isDefault Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  tasks           Task[]
+  recurringTemplates RecurringTaskTemplate[]
+  dailyFocuses    DailyFocus[]
+  notepadTabs     NotepadTab[]
+
+  @@unique([userId, name])
+  @@map("brands")
+}
+
+// ── DAILY FOCUS MODEL ───────────────────────────────────────────────────────
+model DailyFocus {
+  id        String   @id @default(uuid())
+  brandId   String
+  brand     Brand    @relation(fields: [brandId], references: [id], onDelete: Cascade)
+  date      String   // YYYY-MM-DD local logical date
+  heading   String   @default("Daily Focus")
+  note      String   @default("")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([brandId, date])
+  @@map("daily_focuses")
+}
+
+// ── TASK MODEL ──────────────────────────────────────────────────────────────
+model Task {
+  id              String                 @id @default(uuid())
+  brandId         String
+  brand           Brand                  @relation(fields: [brandId], references: [id], onDelete: Cascade)
+  text            String
+  note            String                 @default("")
+  isDone          Boolean                @default(false)
+  date            String                 // YYYY-MM-DD format
+  doneDate        DateTime?
+  orderIndex      Int                    @default(0)
+  recurType       String?                // "daily" | "weekly" | null
+  recurTemplateId String?
+  recurTemplate   RecurringTaskTemplate? @relation(fields: [recurTemplateId], references: [id], onDelete: SetNull)
+  createdAt       DateTime               @default(now())
+  updatedAt       DateTime               @updatedAt
+
+  subtasks        Subtask[]
+
+  @@map("tasks")
+}
+
+// ── RECURRING TASK TEMPLATE MODEL ──────────────────────────────────────────
+model RecurringTaskTemplate {
+  id         String    @id @default(uuid())
+  brandId    String
+  brand      Brand     @relation(fields: [brandId], references: [id], onDelete: Cascade)
+  text       String
+  recurType  String    // "daily" or "weekly"
+  recurDays  String    @default("[]") // JSON string of days, e.g. '["Mon", "Wed"]'
+  isActive   Boolean   @default(true)
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  instantiatedTasks Task[]
+
+  @@map("recurring_templates")
+}
+
+// ── SUBTASK MODEL ───────────────────────────────────────────────────────────
+model Subtask {
+  id         String   @id @default(uuid())
+  taskId     String
+  task       Task     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  text       String
+  done       Boolean  @default(false)
+  orderIndex Int      @default(0)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@map("subtasks")
+}
+
+// ── NOTEPAD TAB MODEL ───────────────────────────────────────────────────────
+model NotepadTab {
+  id           String    @id @default(uuid())
+  brandId      String
+  brand        Brand     @relation(fields: [brandId], references: [id], onDelete: Cascade)
+  title        String
+  content      String    @default("") // HTML rich text
+  orderIndex   Int       @default(0)
+  isArchived   Boolean   @default(false)
+  archiveDate  String?   // YYYY-MM-DD when archived
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@map("notepad_tabs")
+}
+
+// ── UI STATE PERSISTENCE MODEL ──────────────────────────────────────────────
+model UIState {
+  id          String   @id @default(uuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sectionKey  String
+  isCollapsed Boolean  @default(false)
+  updatedAt   DateTime @updatedAt
+
+  @@unique([userId, sectionKey])
+  @@map("ui_states")
+}
