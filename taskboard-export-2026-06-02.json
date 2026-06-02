@@ -1,0 +1,1020 @@
+{
+  "brands-meta-v1": {
+    "brands": [
+      {
+        "id": "default",
+        "name": "Personal",
+        "emoji": "🏠",
+        "color": "#6366f1"
+      },
+      {
+        "id": "b_mpmli1zqdedq",
+        "name": "DSU & DSI",
+        "emoji": "💼",
+        "color": "#10b981"
+      }
+    ],
+    "active": "default"
+  },
+  "taskboard-v4": {
+    "tasks": [
+      {
+        "id": "mpm2c373rx44",
+        "text": "DSU MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-26",
+        "recurId": "mpm2ae86s87x"
+      },
+      {
+        "id": "mpm2c3731lo5",
+        "text": "DSI MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-26",
+        "recurId": "mpm2akvjkjrj"
+      },
+      {
+        "id": "mpm2c373qgc2",
+        "text": "MANTRI MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-26",
+        "recurId": "mpm2as6yaa4k"
+      },
+      {
+        "id": "mpm2c3733u2c",
+        "text": "CRASH CLUB MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-26",
+        "recurId": "mpm2ba66q7vz"
+      },
+      {
+        "id": "mpma2efn8435",
+        "text": "DSPS MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-26",
+        "recurId": "mpma0bg57dv6",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpm2g2zvaixs",
+        "text": "CF MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-26",
+        "recurId": "mpm2g1sg43jo"
+      },
+      {
+        "id": "mpm36hchx1ov",
+        "text": "DSI (dsce budget increase )",
+        "note": "increased dsce budget from 2500 to 4000 then to 5000",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-26",
+        "recurId": null
+      },
+      {
+        "id": "mpm3b0kem3yk",
+        "text": "KPIs",
+        "note": "",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-27",
+        "recurId": null
+      },
+      {
+        "id": "mpm5opvs1qyp",
+        "text": "DSPS updated mis for april month budget spend",
+        "note": "",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-26",
+        "recurId": null
+      },
+      {
+        "id": "mpm5p05r928g",
+        "text": "Dsps Recharge on Meta",
+        "note": "",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-26",
+        "recurId": null
+      },
+      {
+        "id": "mpm6nf7d0wdm",
+        "text": "Shyam Steel india- Gmail confirmation on the payment details",
+        "note": "",
+        "done": false,
+        "date": "2026-05-26",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mpm6o7q5vlor",
+        "text": "IGUS- job posting",
+        "note": "",
+        "done": false,
+        "date": "2026-05-26",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mpm6p74715sq",
+        "text": "Shyam steel weekly report - \nadd snacable, facebook page like, apna ghar- harman tvc",
+        "note": "",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-26",
+        "recurId": null
+      },
+      {
+        "id": "mpmb99udawn7",
+        "text": "Syam Steel Weekly Report",
+        "note": "",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-26",
+        "recurId": "mpmb98d42nn5",
+        "recurType": "weekly",
+        "recurDays": [
+          "Tue"
+        ]
+      },
+      {
+        "id": "mpmejv0kz4fz",
+        "text": "DSPS Campaign",
+        "note": "",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-26",
+        "recurId": null
+      },
+      {
+        "id": "mpmeq5074j2w",
+        "text": "DSPS - Update MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-26",
+        "recurId": null
+      },
+      {
+        "id": "mpmnevw68rod",
+        "text": "Shyam Steel Padma shri Post Boost",
+        "note": "",
+        "done": true,
+        "date": "2026-05-26",
+        "doneDate": "2026-05-26",
+        "recurId": null
+      },
+      {
+        "id": "mpne0l4oh0za",
+        "text": "DSU MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-27",
+        "doneDate": "2026-05-27",
+        "recurId": "mpm2ae86s87x",
+        "recurType": "daily",
+        "subtasks": []
+      },
+      {
+        "id": "mpne0l4oyp5m",
+        "text": "DSI MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-27",
+        "doneDate": "2026-05-27",
+        "recurId": "mpm2akvjkjrj",
+        "recurType": "daily",
+        "subtasks": []
+      },
+      {
+        "id": "mpne0l4oe2z9",
+        "text": "MANTRI MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-27",
+        "doneDate": "2026-05-27",
+        "recurId": "mpm2as6yaa4k",
+        "recurType": "daily",
+        "subtasks": []
+      },
+      {
+        "id": "mpne0l4ow0xp",
+        "text": "CRASH CLUB MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-27",
+        "doneDate": "2026-05-27",
+        "recurId": "mpm2ba66q7vz",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpne0l4o5893",
+        "text": "CF MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-27",
+        "doneDate": "2026-05-27",
+        "recurId": "mpm2g1sg43jo",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpne0l4ork98",
+        "text": "DSPS MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-27",
+        "doneDate": "2026-05-27",
+        "recurId": "mpma0bg57dv6",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpnn2tzksrim",
+        "text": "Mantri - Create Section for google Mis",
+        "note": "",
+        "done": true,
+        "date": "2026-05-27",
+        "doneDate": "2026-05-27",
+        "recurId": null
+      },
+      {
+        "id": "mpnnzkw0lpr6",
+        "text": "IGUS- job posting",
+        "note": "",
+        "done": false,
+        "date": "2026-05-27",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mpnnznlodt4h",
+        "text": "Shyam Steel india- Gmail confirmation on the payment details",
+        "note": "",
+        "done": false,
+        "date": "2026-05-27",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mpnokqtnus3l",
+        "text": "OPTIMISE DSU & DSI CAMPAIGNS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-27",
+        "doneDate": "2026-05-27",
+        "recurId": "mpnokqtnfmq1",
+        "recurType": "daily",
+        "subtasks": [
+          {
+            "id": "mpnokxpbi30k",
+            "text": "DSU",
+            "done": false
+          },
+          {
+            "id": "mpnol16s9nyk",
+            "text": "DSI",
+            "done": true
+          }
+        ]
+      },
+      {
+        "id": "mpnqric4m5xo",
+        "text": "Apna Ghar Post Boosting",
+        "note": "",
+        "done": true,
+        "date": "2026-05-27",
+        "doneDate": "2026-05-27",
+        "recurId": null
+      },
+      {
+        "id": "mpo2cs2nz3m5",
+        "text": "DSI - Create a new sheet for MIS",
+        "note": "",
+        "done": false,
+        "date": "2026-05-28",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mpoxmtajie6y",
+        "text": "DSU MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-28",
+        "doneDate": "2026-05-28",
+        "recurId": "mpm2ae86s87x",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpoxmtaj0v1g",
+        "text": "DSI MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-28",
+        "doneDate": "2026-05-28",
+        "recurId": "mpm2akvjkjrj",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpoxmtaj6x88",
+        "text": "MANTRI MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-28",
+        "doneDate": "2026-05-28",
+        "recurId": "mpm2as6yaa4k",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpoxmtajp69l",
+        "text": "CRASH CLUB MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-28",
+        "doneDate": "2026-05-28",
+        "recurId": "mpm2ba66q7vz",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpoxmtaj051s",
+        "text": "CF MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-28",
+        "doneDate": "2026-05-28",
+        "recurId": "mpm2g1sg43jo",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpoxmtajg0sj",
+        "text": "DSPS MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-28",
+        "doneDate": "2026-05-28",
+        "recurId": "mpma0bg57dv6",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpp0v92g5gi3",
+        "text": "Campaign Optimisation",
+        "note": "",
+        "done": true,
+        "date": "2026-05-28",
+        "doneDate": "2026-05-28",
+        "recurId": "mpp0v92fg4q7",
+        "recurType": "daily",
+        "subtasks": [
+          {
+            "id": "mpp0x9uaax2d",
+            "text": "DSU",
+            "done": true
+          },
+          {
+            "id": "mpp0xfjey5rg",
+            "text": "DSI",
+            "done": true
+          }
+        ]
+      },
+      {
+        "id": "mpp1oejm01bt",
+        "text": "SS | AG - EID Post boost",
+        "note": "",
+        "done": true,
+        "date": "2026-05-28",
+        "doneDate": "2026-05-28",
+        "recurId": null
+      },
+      {
+        "id": "mpp7phjof4bh",
+        "text": "Shyam Steel Decade Post Boost",
+        "note": "",
+        "done": true,
+        "date": "2026-05-28",
+        "doneDate": "2026-05-28",
+        "recurId": null
+      },
+      {
+        "id": "mppd0cum4gna",
+        "text": "DSPS - Media Plan",
+        "note": "",
+        "done": true,
+        "date": "2026-05-28",
+        "doneDate": "2026-05-28",
+        "recurId": null
+      },
+      {
+        "id": "mppigua8kj39",
+        "text": "IGUS- job posting",
+        "note": "",
+        "done": false,
+        "date": "2026-05-28",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mppigxf7whjs",
+        "text": "Shyam Steel india- Gmail confirmation on the payment details",
+        "note": "",
+        "done": false,
+        "date": "2026-05-28",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mpqctt03fyu5",
+        "text": "DSU MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-29",
+        "doneDate": "2026-05-29",
+        "recurId": "mpm2ae86s87x",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpqctt03wodp",
+        "text": "DSI MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-29",
+        "doneDate": "2026-05-29",
+        "recurId": "mpm2akvjkjrj",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpqctt03eql2",
+        "text": "MANTRI MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-29",
+        "doneDate": "2026-05-29",
+        "recurId": "mpm2as6yaa4k",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpqctt03c7bn",
+        "text": "DSPS MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-29",
+        "doneDate": "2026-05-29",
+        "recurId": "mpma0bg57dv6",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpqctt033xqp",
+        "text": "CRASH CLUB MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-29",
+        "doneDate": "2026-05-29",
+        "recurId": "mpm2ba66q7vz",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpqctt0371s5",
+        "text": "CF MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-29",
+        "doneDate": "2026-05-29",
+        "recurId": "mpm2g1sg43jo",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpqctt032ox4",
+        "text": "Campaign Optimisation",
+        "note": "",
+        "done": false,
+        "date": "2026-05-29",
+        "doneDate": null,
+        "recurId": "mpp0v92fg4q7",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpqcuuntij6q",
+        "text": "IGUS- job posting",
+        "note": "",
+        "done": false,
+        "date": "2026-05-29",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mpqcv56iu7kp",
+        "text": "Shyam Steel india- Gmail confirmation on the payment details",
+        "note": "",
+        "done": false,
+        "date": "2026-05-29",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mpqgv9esd6ix",
+        "text": "Shyam Steel Decade Post Boost",
+        "note": "",
+        "done": true,
+        "date": "2026-05-29",
+        "doneDate": "2026-05-29",
+        "recurId": null
+      },
+      {
+        "id": "mpqx6p7dq2ph",
+        "text": "DSPS Branding Campaign Plan",
+        "note": "",
+        "done": false,
+        "date": "2026-05-30",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mpqx7h6ssqae",
+        "text": "Work on DSU Conversion Tracking Issue",
+        "note": "",
+        "done": true,
+        "date": "2026-05-29",
+        "doneDate": "2026-05-29",
+        "recurId": null
+      },
+      {
+        "id": "mprs27k65kgj",
+        "text": "DSU MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-30",
+        "doneDate": "2026-05-30",
+        "recurId": "mpm2ae86s87x",
+        "recurType": "daily"
+      },
+      {
+        "id": "mprs27k6wd13",
+        "text": "DSI MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-30",
+        "doneDate": "2026-05-30",
+        "recurId": "mpm2akvjkjrj",
+        "recurType": "daily"
+      },
+      {
+        "id": "mprs27k6pkuh",
+        "text": "MANTRI MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-05-30",
+        "doneDate": "2026-05-30",
+        "recurId": "mpm2as6yaa4k",
+        "recurType": "daily"
+      },
+      {
+        "id": "mprs27k6l9r7",
+        "text": "CRASH CLUB MIS",
+        "note": "",
+        "done": false,
+        "date": "2026-05-30",
+        "doneDate": null,
+        "recurId": "mpm2ba66q7vz",
+        "recurType": "daily"
+      },
+      {
+        "id": "mprs27k6ffsp",
+        "text": "CF MIS",
+        "note": "",
+        "done": false,
+        "date": "2026-05-30",
+        "doneDate": null,
+        "recurId": "mpm2g1sg43jo",
+        "recurType": "daily"
+      },
+      {
+        "id": "mprs27k6ykug",
+        "text": "DSPS MIS",
+        "note": "",
+        "done": false,
+        "date": "2026-05-30",
+        "doneDate": null,
+        "recurId": "mpma0bg57dv6",
+        "recurType": "daily"
+      },
+      {
+        "id": "mprs27k6mmma",
+        "text": "Campaign Optimisation",
+        "note": "",
+        "done": true,
+        "date": "2026-05-30",
+        "doneDate": "2026-05-30",
+        "recurId": "mpp0v92fg4q7",
+        "recurType": "daily"
+      },
+      {
+        "id": "mprtwjw90313",
+        "text": "Work on DSI Conversion Tracking",
+        "note": "",
+        "done": false,
+        "date": "2026-05-30",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mpru2vi5d86o",
+        "text": "Revise DSPS Media Plan",
+        "note": "",
+        "done": false,
+        "date": "2026-05-30",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mpryl7warbzb",
+        "text": "DSU - Create B-Tech P Max Campaign",
+        "note": "",
+        "done": true,
+        "date": "2026-05-30",
+        "doneDate": "2026-05-30",
+        "recurId": null
+      },
+      {
+        "id": "mpunm8dspkzf",
+        "text": "DSU MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-06-01",
+        "doneDate": "2026-06-01",
+        "recurId": "mpm2ae86s87x",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpunm8dsders",
+        "text": "DSI MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-06-01",
+        "doneDate": "2026-06-01",
+        "recurId": "mpm2akvjkjrj",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpunm8dszsgu",
+        "text": "MANTRI MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-06-01",
+        "doneDate": "2026-06-01",
+        "recurId": "mpm2as6yaa4k",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpunm8dshjuw",
+        "text": "CRASH CLUB MIS",
+        "note": "",
+        "done": false,
+        "date": "2026-06-01",
+        "doneDate": null,
+        "recurId": "mpm2ba66q7vz",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpunm8dsv68u",
+        "text": "CF MIS",
+        "note": "",
+        "done": false,
+        "date": "2026-06-01",
+        "doneDate": null,
+        "recurId": "mpm2g1sg43jo",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpunm8dsxkyw",
+        "text": "DSPS MIS",
+        "note": "",
+        "done": false,
+        "date": "2026-06-01",
+        "doneDate": null,
+        "recurId": "mpma0bg57dv6",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpunm8dsgoi4",
+        "text": "Campaign Optimisation",
+        "note": "",
+        "done": true,
+        "date": "2026-06-01",
+        "doneDate": "2026-06-01",
+        "recurId": "mpp0v92fg4q7",
+        "recurType": "daily",
+        "subtasks": [
+          {
+            "id": "mpv350rlwauz",
+            "text": "DSU",
+            "done": true
+          },
+          {
+            "id": "mpv355i6icg3",
+            "text": "DSI",
+            "done": false
+          }
+        ]
+      },
+      {
+        "id": "mpunmyjtrgpx",
+        "text": "Shyam Steel Weekly Report",
+        "note": "",
+        "done": true,
+        "date": "2026-06-01",
+        "doneDate": "2026-06-01",
+        "recurId": "mpunmx9ivdyf",
+        "recurType": "weekly",
+        "recurDays": [
+          "Mon"
+        ]
+      },
+      {
+        "id": "mpuyyab1n9tw",
+        "text": "Shyam Steel Post Boost",
+        "note": "",
+        "done": true,
+        "date": "2026-06-01",
+        "doneDate": "2026-06-01",
+        "recurId": null
+      },
+      {
+        "id": "mpuyygudpnmp",
+        "text": "Apna Ghar Post Boost",
+        "note": "",
+        "done": true,
+        "date": "2026-06-01",
+        "doneDate": "2026-06-01",
+        "recurId": null
+      },
+      {
+        "id": "mpv35yr0xrl9",
+        "text": "DSPS Media Plan",
+        "note": "",
+        "done": true,
+        "date": "2026-06-01",
+        "doneDate": "2026-06-01",
+        "recurId": null
+      },
+      {
+        "id": "mpv8bqz5qp7b",
+        "text": "Shyam Steel Decade Boost",
+        "note": "",
+        "done": true,
+        "date": "2026-06-01",
+        "doneDate": "2026-06-01",
+        "recurId": null
+      },
+      {
+        "id": "mpva0zepu23y",
+        "text": "DSU & DSI Invoice",
+        "note": "",
+        "done": true,
+        "date": "2026-06-01",
+        "doneDate": "2026-06-01",
+        "recurId": null
+      },
+      {
+        "id": "mpw4bkumjg7k",
+        "text": "DSU MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-06-02",
+        "doneDate": "2026-06-02",
+        "recurId": "mpm2ae86s87x",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpw4bkum9v5t",
+        "text": "DSI MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-06-02",
+        "doneDate": "2026-06-02",
+        "recurId": "mpm2akvjkjrj",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpw4bkumr8e9",
+        "text": "MANTRI MIS",
+        "note": "",
+        "done": true,
+        "date": "2026-06-02",
+        "doneDate": "2026-06-02",
+        "recurId": "mpm2as6yaa4k",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpw4bkumr948",
+        "text": "CRASH CLUB MIS",
+        "note": "",
+        "done": false,
+        "date": "2026-06-02",
+        "doneDate": null,
+        "recurId": "mpm2ba66q7vz",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpw4bkumik34",
+        "text": "CF MIS",
+        "note": "",
+        "done": false,
+        "date": "2026-06-02",
+        "doneDate": null,
+        "recurId": "mpm2g1sg43jo",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpw4bkum3tj1",
+        "text": "DSPS MIS",
+        "note": "",
+        "done": false,
+        "date": "2026-06-02",
+        "doneDate": null,
+        "recurId": "mpma0bg57dv6",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpw4bkumbb5d",
+        "text": "Campaign Optimisation",
+        "note": "",
+        "done": true,
+        "date": "2026-06-02",
+        "doneDate": "2026-06-02",
+        "recurId": "mpp0v92fg4q7",
+        "recurType": "daily"
+      },
+      {
+        "id": "mpw4chby4vbe",
+        "text": "IFS Quarterly Report",
+        "note": "",
+        "done": false,
+        "date": "2026-06-02",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mpw4dfnxz4sj",
+        "text": "Mantri - Monthly Report",
+        "note": "",
+        "done": true,
+        "date": "2026-06-02",
+        "doneDate": "2026-06-02",
+        "recurId": null
+      },
+      {
+        "id": "mpw5hqtdac63",
+        "text": "Update Shyam Steel Monthly Report Missings",
+        "note": "",
+        "done": true,
+        "date": "2026-06-02",
+        "doneDate": "2026-06-02",
+        "recurId": null
+      },
+      {
+        "id": "mpw5njdtfi0b",
+        "text": "DSPS Monthly Report",
+        "note": "",
+        "done": false,
+        "date": "2026-06-03",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mpw5p1ule4og",
+        "text": "Shyam Steel Monthly Report",
+        "note": "",
+        "done": false,
+        "date": "2026-06-03",
+        "doneDate": null,
+        "recurId": null
+      },
+      {
+        "id": "mpw5plw8rvvo",
+        "text": "Classic Featherlite Monthly Report",
+        "note": "",
+        "done": false,
+        "date": "2026-06-04",
+        "doneDate": null,
+        "recurId": null
+      }
+    ],
+    "recurring": [
+      {
+        "id": "mpm2ae86s87x",
+        "text": "DSU MIS"
+      },
+      {
+        "id": "mpm2akvjkjrj",
+        "text": "DSI MIS"
+      },
+      {
+        "id": "mpm2as6yaa4k",
+        "text": "MANTRI MIS"
+      },
+      {
+        "id": "mpm2ba66q7vz",
+        "text": "CRASH CLUB MIS"
+      },
+      {
+        "id": "mpm2g1sg43jo",
+        "text": "CF MIS"
+      },
+      {
+        "id": "mpma0bg57dv6",
+        "text": "DSPS MIS"
+      },
+      {
+        "id": "mpp0v92fg4q7",
+        "text": "Campaign Optimisation"
+      }
+    ],
+    "heading": {
+      "2026-05-26": ""
+    },
+    "notes": {
+      "2026-05-26": ""
+    },
+    "weeklyRecurring": [
+      {
+        "id": "mpunmx9ivdyf",
+        "text": "Shyam Steel Weekly Report",
+        "days": [
+          "Mon"
+        ]
+      }
+    ]
+  },
+  "taskboard-brand-b_mpmli1zqdedq": {
+    "tasks": [],
+    "recurring": [],
+    "weeklyRecurring": [],
+    "heading": {},
+    "notes": {}
+  },
+  "notepad-v1": {
+    "tabs": [
+      {
+        "id": "np_mpw4bkuu1xn",
+        "title": "Today's Notes",
+        "content": ""
+      }
+    ],
+    "active": "np_mpw4bkuu1xn",
+    "collapsed": true,
+    "sectionTitle": "Quick Notes",
+    "lastDate": "2026-06-02"
+  },
+  "notepad-history": {
+    "notepad-hist-2026-05-27": [
+      {
+        "id": "np_mpne0l4w660",
+        "title": "Today's Notes",
+        "content": "Payment overdue on <b>Mantri</b> (meta)- 24<br><br>There might be some issue with auto pay on meta or the card<br><br><br><div><br></div>"
+      },
+      {
+        "id": "np_mpnhwoh6z24",
+        "title": "KPIs",
+        "content": "\n\n\n\n<div>\n\n\n\n<h2><span class=\"s1\"><b>Key Performance Indicators (KPIs) – Performance Marketing Specialist</b></span></h2></div><ul><li>Achieve target CPL/CPA and ROAS</li><li>Optimise and scale ad campaigns effectively</li><li>Improve lead quality and conversion rates</li><li>Manage and utilize ad budgets efficiently</li><li>Conduct regular A/B testing for creatives and audiences</li><li>Ensure timely campaign execution and reporting</li><li>Maintain accurate tracking, pixel, and analytics setup</li><li>Coordinate with creative and client teams for better performance</li><li>Monitor campaign KPIs and provide actionable insights</li><li>Stay updated with platform trends and advertising strategies</li></ul>"
+      }
+    ],
+    "notepad-hist-2026-05-26": [
+      {
+        "id": "np_mpm3jijpelo",
+        "title": "Meeting Notes",
+        "content": "test note for the future hhh"
+      },
+      {
+        "id": "np_mpmjmdutmi9",
+        "title": "CRASH CLUB",
+        "content": "test for the future"
+      },
+      {
+        "id": "np_mpmbmafmzky",
+        "title": "DSU & DSI",
+        "content": "campaign budget increase"
+      }
+    ]
+  },
+  "section-collapse-v1": {
+    "secRecur": false,
+    "secWeekly": true,
+    "secToday": false
+  },
+  "_export_meta": {
+    "exported_at": "2026-06-02T12:56:46.122Z",
+    "version": "taskboard-v4",
+    "note": "Use import.html or paste into DevTools console with the import script."
+  }
+}

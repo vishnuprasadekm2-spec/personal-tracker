@@ -65,7 +65,7 @@ async function acceptAlert() {
   try {
     await driver.wait(until.alertIsPresent(), SHORT);
     await driver.switchTo().alert().accept();
-  } catch {}
+  } catch { }
 }
 
 async function setDateInput(element, dateStr) {
@@ -94,7 +94,7 @@ async function findTaskByText(searchText) {
     try {
       const text = await item.getText();
       if (text.includes(searchText)) return item;
-    } catch {}
+    } catch { }
   }
   return null;
 }
@@ -341,7 +341,7 @@ async function testRecurringDaily() {
   }
 
   // Close modal
-  try { await click(".mbtn.cancel"); } catch {}
+  try { await click(".mbtn.cancel"); } catch { }
   await wait(300);
 }
 
@@ -377,7 +377,7 @@ async function testRecurringWeekly() {
   await wait(REFRESH_WAIT);
 
   // Re-open to verify
-  try { await click(".mbtn.cancel"); } catch {}
+  try { await click(".mbtn.cancel"); } catch { }
   await wait(300);
   await manageBtns[1].click();
   await wait(500);
@@ -419,7 +419,7 @@ async function testRecurringWeekly() {
     ok("BUG FIX: weekly modal refreshes on remove", false);
   }
 
-  try { await click(".mbtn.cancel"); } catch {}
+  try { await click(".mbtn.cancel"); } catch { }
 }
 
 // ── 6. Daily Focus ────────────────────────────────────────────────────────────
@@ -626,7 +626,7 @@ async function testDragDrop() {
         await item.findElement(By.css(".del-btn")).then((b) => b.click());
         await acceptAlert();
         await wait(REFRESH_WAIT);
-      } catch {}
+      } catch { }
     }
   }
 }
@@ -756,22 +756,22 @@ async function main() {
     process.exit(1);
   }
 
-  await withTimeout(testPageLoad,            "1. Page Load");
-  await withTimeout(testOneOffTaskCRUD,      "2. One-Off Task CRUD");
-  await withTimeout(testSubtasks,            "3. Subtasks");
-  await withTimeout(testRecurringDaily,      "4. Recurring Daily (BUG FIX)");
-  await withTimeout(testRecurringWeekly,     "5. Recurring Weekly (BUG FIX)");
-  await withTimeout(testDailyFocus,          "6. Daily Focus");
-  await withTimeout(testDateNavigation,      "7. Date Navigation");
-  await withTimeout(testTaskScheduling,      "8. Task Scheduling");
-  await withTimeout(testStatsAndProgress,    "9. Stats & Progress");
-  await withTimeout(testNotepad,             "10. Notepad");
-  await withTimeout(testHistoryPanel,        "11. History Panel");
-  await withTimeout(testDragDrop,            "12. Drag & Drop");
-  await withTimeout(testReportAPI,           "13. Report API");
-  await withTimeout(testBrandSwitching,      "14. Brand Switching");
-  await withTimeout(testDeleteRecovery,      "15. Delete Recovery (BUG FIX)");
-  await withTimeout(testSectionCollapse,     "16. Section Collapse");
+  await withTimeout(testPageLoad, "1. Page Load");
+  await withTimeout(testOneOffTaskCRUD, "2. One-Off Task CRUD");
+  await withTimeout(testSubtasks, "3. Subtasks");
+  await withTimeout(testRecurringDaily, "4. Recurring Daily (BUG FIX)");
+  await withTimeout(testRecurringWeekly, "5. Recurring Weekly (BUG FIX)");
+  await withTimeout(testDailyFocus, "6. Daily Focus");
+  await withTimeout(testDateNavigation, "7. Date Navigation");
+  await withTimeout(testTaskScheduling, "8. Task Scheduling");
+  await withTimeout(testStatsAndProgress, "9. Stats & Progress");
+  await withTimeout(testNotepad, "10. Notepad");
+  await withTimeout(testHistoryPanel, "11. History Panel");
+  await withTimeout(testDragDrop, "12. Drag & Drop");
+  await withTimeout(testReportAPI, "13. Report API");
+  await withTimeout(testBrandSwitching, "14. Brand Switching");
+  await withTimeout(testDeleteRecovery, "15. Delete Recovery (BUG FIX)");
+  await withTimeout(testSectionCollapse, "16. Section Collapse");
 
   await teardown();
 
