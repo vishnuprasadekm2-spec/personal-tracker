@@ -441,11 +441,11 @@ async function testDailyFocus() {
   await wait(REFRESH_WAIT);
   ok("note edit triggered save", true);
 
-  // Reload and verify
+  // Reload and verify — use JS .value property (not getAttribute which is for initial HTML attr)
   await reloadPage();
   const savedNote = await find(".hero-note");
-  const val = await savedNote.getAttribute("value");
-  ok("note persisted after reload", val.includes("Selenium note text"));
+  const val = await driver.executeScript("return arguments[0].value", savedNote);
+  ok("note persisted after reload", val && val.includes("Selenium note text"));
 
   // Restore
   const hdg = await find(".hero-heading");
@@ -510,7 +510,7 @@ async function testStatsAndProgress() {
 
   ok("progress card present", await exists(".prog-card"));
   ok("progress track present", await exists(".prog-track"));
-  ok("stats grid present", await exists(".sgrid"));
+  ok("stats grid present", await exists(".stats-grid"));
 
   const pctEl = await find(".prog-pct");
   const pctText = await pctEl.getText();
@@ -641,7 +641,14 @@ async function testReportAPI() {
   const errSrc = await driver.getPageSource();
   ok("report API returns error on missing params", errSrc.includes("Missing") || errSrc.includes("error"));
 
+  // Navigate to app and click first brand tab to set brandId in URL
   await reloadPage();
+  const brandTabs = await findAll(".brand-pill");
+  if (brandTabs.length > 0) {
+    await brandTabs[0].click();
+    await wait(REFRESH_WAIT);
+  }
+
   const url = await driver.getCurrentUrl();
   const m = url.match(/brandId=([^&]+)/);
   const today = new Date().toISOString().slice(0, 10);
@@ -662,7 +669,7 @@ async function testBrandSwitching() {
   console.log("\n── 14. Brand Switching ──");
   await reloadPage();
 
-  const brandTabs = await findAll(".bbrand");
+  const brandTabs = await findAll(".brand-pill");
   ok("brand tabs render", brandTabs.length > 0);
 
   if (brandTabs.length > 0) {
